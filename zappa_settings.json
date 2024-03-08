@@ -1,0 +1,22 @@
+{
+    "dev": {
+        "app_function": "Casas.lambda_handler",
+        "aws_region": "us-east-1",
+        "project_name": "bigdataparcial",
+        "runtime": "python3.8",
+        "s3_bucket": "zappa-q6y33fmy5",
+        "apigateway_enabled": false,
+        "manage_roles": false,
+        "keep_warm": false,
+        "role_name": "LabRole",
+        "events": [
+            {
+                "function": "Casas.py",
+                "expression": "cron(30 02 * * 4 *)"  // Ejecutar todos los días a las 8:00 UTC
+            }
+        ] 
+    }
+}
+        
+    }
+}
