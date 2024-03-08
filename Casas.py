@@ -4,7 +4,7 @@ from datetime import datetime
 
 def lambda_handler(event, context):
     s3 = boto3.client('s3')
-    bucket_name = 'fincaraizbucket'
+    bucket_name = 'zappa-q6y33fmy5'
     for page_number in range(1, 6):
         if(page_number==1):
             url = f'https://casas.mitula.com.co/casas/pereira/'
