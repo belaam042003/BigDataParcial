@@ -12,11 +12,8 @@
         "events": [
             {
                 "function": "Casas.py",
-                "expression": "cron(30 02 * * 4 *)"  // Ejecutar todos los días a las 8:00 UTC
+                "expression": "cron(35 2 ? * FRI *)"  // Ejecutar todos los días a las 8:00 UTC
             }
         ] 
-    }
-}
-        
     }
 }
